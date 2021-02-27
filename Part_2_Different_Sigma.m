@@ -32,7 +32,7 @@ axis tight
 grid on;
 view(2)
 title('Conductivity ($\sigma$) Map','interpreter','latex');
-saveas(gcf,fullfile('D:\School Work\ELEC 4700\My 4700 Code\Assignment 2\Figures','Part2ConductivityMapSigmaBoxGTSigmaOutside.png'),'png')
+%saveas(gcf,fullfile('D:\School Work\ELEC 4700\My 4700 Code\Assignment 2\Figures','Part2ConductivityMapSigmaBoxGTSigmaOutside.png'),'png')
 %% Generate G and V matricies
 for i = 1:nx
     for j = 1: ny
@@ -99,7 +99,7 @@ sgtitle('Voltage Map with Bottleneck');
 cb=colorbar;
 cb.Label.String = 'Voltage';
 cb.Location = 'eastoutside';
-saveas(gcf,fullfile('D:\School Work\ELEC 4700\My 4700 Code\Assignment 2\Figures','Part2VoltageMapBottleNeckSigmaBoxGTSigmaOutside.png'),'png')
+%saveas(gcf,fullfile('D:\School Work\ELEC 4700\My 4700 Code\Assignment 2\Figures','Part2VoltageMapBottleNeckSigmaBoxGTSigmaOutside.png'),'png')
 %%
 %Plot the Electric field using maxwells equation 
 % Using the classical E = -GradV equation
@@ -113,7 +113,7 @@ axis tight
 xlabel('X-Position')
 ylabel('Y-Position')
 title('Quiver Plot of Electric Field')
-saveas(gcf,fullfile('D:\School Work\ELEC 4700\My 4700 Code\Assignment 2\Figures','Part2QuiverPlotEfSigmaBoxGTSigmaOutside.png'),'png')
+%saveas(gcf,fullfile('D:\School Work\ELEC 4700\My 4700 Code\Assignment 2\Figures','Part2QuiverPlotEfSigmaBoxGTSigmaOutside.png'),'png')
 %%
 %Plot the current density
 % Using Maxwells equation for the current 
@@ -126,7 +126,7 @@ axis tight
 xlabel('Y-Position')
 ylabel('X-Position')
 title('Quiver Plot of Current Density (J)')
-saveas(gcf,fullfile('D:\School Work\ELEC 4700\My 4700 Code\Assignment 2\Figures','Part2CCurrentDensitySigmaBoxGTSigmaOutside.png'),'png')
+%saveas(gcf,fullfile('D:\School Work\ELEC 4700\My 4700 Code\Assignment 2\Figures','Part2CCurrentDensitySigmaBoxGTSigmaOutside.png'),'png')
 %%
 %Plot the Magnitude of the current density
 % Simply getting the magnitude of the current density
@@ -156,7 +156,7 @@ cb=colorbar;
 cb.Location = 'eastoutside';
 cb.Label.String = '|J|';
 sgtitle('Magnitude of Current Density')
-saveas(gcf,fullfile('D:\School Work\ELEC 4700\My 4700 Code\Assignment 2\Figures','Part2MagCurrentDensitySigmaBoxGTSigmaOutside.png'),'png')
+%saveas(gcf,fullfile('D:\School Work\ELEC 4700\My 4700 Code\Assignment 2\Figures','Part2MagCurrentDensitySigmaBoxGTSigmaOutside.png'),'png')
 %%
 %Plot the Electric field in X
 figure('name','Electric Field in X')
@@ -184,7 +184,7 @@ cb=colorbar;
 cb.Location = 'eastoutside';
 cb.Label.String = 'E-Field';
 sgtitle('Electric Field')
-saveas(gcf,fullfile('D:\School Work\ELEC 4700\My 4700 Code\Assignment 2\Figures','Part2EfieldXSigmaBoxGTSigmaOutside.png'),'png')
+%saveas(gcf,fullfile('D:\School Work\ELEC 4700\My 4700 Code\Assignment 2\Figures','Part2EfieldXSigmaBoxGTSigmaOutside.png'),'png')
 %%
 %plot the Electric Field in Y
 figure('name','Electric Field in Y')
@@ -212,4 +212,4 @@ cb=colorbar;
 cb.Location = 'eastoutside';
 cb.Label.String = 'E-Field';
 sgtitle('Electric Field')
-saveas(gcf,fullfile('D:\School Work\ELEC 4700\My 4700 Code\Assignment 2\Figures','Part2EfieldYSigmaBoxGTSigmaOutside.png'),'png')
+%saveas(gcf,fullfile('D:\School Work\ELEC 4700\My 4700 Code\Assignment 2\Figures','Part2EfieldYSigmaBoxGTSigmaOutside.png'),'png')

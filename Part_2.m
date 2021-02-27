@@ -32,7 +32,7 @@ axis tight
 grid on;
 view(2)
 title('Conductivity ($\sigma$) Map','interpreter','latex');
-saveas(gcf,fullfile('D:\School Work\ELEC 4700\My 4700 Code\Assignment 2\Figures','Part2ConductivityMap.png'),'png')
+%saveas(gcf,fullfile('D:\School Work\ELEC 4700\My 4700 Code\Assignment 2\Figures','Part2ConductivityMap.png'),'png')
 %% Generate G and V matricies
 for i = 1:nx
     for j = 1: ny
